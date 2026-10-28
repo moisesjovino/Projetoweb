@@ -1,0 +1,101 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>CS-GTI TECH LTDA - Landing Page</title>
+    <!-- CSS Externo -->
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+    <!-- 1. TOPO -->
+    <header class="topo">
+        <div class="header-container">
+            <h1>CS-GTI TECH LTDA</h1>
+            <p>Ciprianus Septem Gestão de Tecnologia e Inovação Ltda</p>
+        </div>
+    </header>
+
+    <!-- 2. MENU -->
+    <nav class="menu-navegacao">
+        <ul>
+            <li><a href="#hero">Início</a></li>
+            <li><a href="#pilares">Pilares</a></li>
+            <li><a href="#sobre">Sobre Nós</a></li>
+            <li><a href="#contato">Contato</a></li>
+        </ul>
+    </nav>
+
+    <!-- 3. DESTAQUE / HERO -->
+    <section id="hero" class="hero-section">
+        <div class="hero-content">
+            <h2>Transformação Digital e Inovação Estratégica</h2>
+            <p>Soluções modernas em gestão de tecnologia, inovação e arquiteturas disruptivas para impulsionar seu negócio.</p>
+            <a href="#contato" class="btn-hero">Fale Conosco</a>
+        </div>
+    </section>
+
+    <!-- 4. SEÇÃO COM 2 COLUNAS DE CONTEÚDO -->
+    <section id="sobre" class="duas-colunas">
+        <div class="coluna">
+            <h3>Nossa Missão</h3>
+            <p>Fornecer governança e infraestrutura tecnológica de ponta, permitindo que empresas otimizem processos e alcancem eficiência máxima em suas operações diárias.</p>
+        </div>
+        <div class="coluna">
+            <h3>Nossa Visão</h3>
+            <p>Liderar a adoção de tecnologias emergentes e de ruptura, promovendo soluções em Inteligência Artificial e automação avançada com foco em resultados concretos.</p>
+        </div>
+    </section>
+
+    <!-- SEÇÃO ADICIONAL DE PILARES (DA SUA ESTRUTURA ANTERIOR) -->
+    <section id="pilares" class="pilares-section">
+        <h2>Nossos Três Pilares</h2>
+        <div class="cards-container">
+            <div class="card">
+                <h3>Gestão</h3>
+                <p>Planejamento estratégico, organização e otimização dos processos tecnológicos e de negócios.</p>
+            </div>
+            <div class="card">
+                <h3>Inovação</h3>
+                <p>Desenvolvimento e aplicação de novas ideias, métodos e serviços para resolver problemas complexos.</p>
+            </div>
+            <div class="card">
+                <h3>Disruptivas</h3>
+                <p>Adoção de tecnologias emergentes (IA, automação) para transformar modelos de negócios.</p>
+            </div>
+        </div>
+    </section>
+
+    <!-- 5. FORMULÁRIO COM CONTROLE DE JS -->
+    <section id="contato" class="formulario-section">
+        <h2>Entre em Contato</h2>
+        <form id="formContato">
+            <div class="campo-grupo">
+                <label for="nome">Nome Completo:</label>
+                <input type="text" id="nome" name="nome" placeholder="Mosés Jovino">
+            </div>
+
+            <div class="campo-grupo">
+                <label for="email">E-mail:</label>
+                <input type="email" id="email" name="email" placeholder="moises.silva967@sc.unipe.edu.br">
+            </div>
+
+            <div class="campo-grupo">
+                <label for="mensagem">Mensagem:</label>
+                <textarea id="mensagem" name="mensagem" rows="4" placeholder="Escreva sua mensagem..."></textarea>
+            </div>
+
+            <button type="submit" id="btnEnviar">Enviar Mensagem</button>
+            <div id="statusForm" class="mensagem-status"></div>
+        </form>
+    </section>
+
+    <!-- 6. RODAPÉ -->
+    <footer class="rodape">
+        <p>&copy; 2026 CS-GTI TECH LTDA. Todos os direitos reservados.</p>
+    </footer>
+
+    <!-- JavaScript Externo -->
+    <script src="script.js"></script>
+</body>
